@@ -35,7 +35,7 @@ int main (int argc, char *argv[])
             ip[i].first = argv[i*2+1];
             ip[i].second = argv[i*2+2];
         }
-        
+
         printf("ip[%d]: first:%s, second:%s\n", i, ip[i].first, ip[i].second);
     }
 
@@ -52,13 +52,11 @@ int people(InterestingParty *ip, int ip_size) {
 
     for (i = 0; i < ip_size; i++) {
         for(j = 0; j < ip_size; j++) {
-            //if (i != j) {
                 if(!strcmp(ip[i].first, ip[j].first) || !strcmp(ip[i].first, ip[j].second))
                     tmp_first++;
 
                 if(!strcmp(ip[i].second, ip[j].first) || !strcmp(ip[i].second, ip[j].second))
                     tmp_second++;
-            //}
         }
 
         ret = (ret >= tmp_first  ? ret : tmp_first);
