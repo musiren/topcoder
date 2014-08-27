@@ -13,7 +13,9 @@ rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/bin
 mv ~/rpmbuild/BUILDROOT/kiwi-juice %{buildroot}/usr/bin
 mv ~/rpmbuild/BUILDROOT/interesting-party %{buildroot}/usr/bin
+mv ~/rpmbuild/BUILDROOT/encrypt %{buildroot}/usr/bin
 
 %files
 %attr(660,root,root) /usr/bin/kiwi-juice
 %attr(660,root,root) /usr/bin/interesting-party
+%attr(660,root,root) /usr/bin/encrypt

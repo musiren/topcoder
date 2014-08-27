@@ -6,14 +6,17 @@ TARGET = topcoder
 all : $(TARGET)
 
 $(TARGET) :
-	$(CC) $(CFLAGS) -o0 kiwi-juice ./kiwijuice/src/main.c
-	$(CC) $(CFLAGS) -o0 interesting-party ./interestingparty/src/main.c
+	$(CC) $(CFLAGS) -o kiwi-juice ./kiwijuice/src/main.c
+	$(CC) $(CFLAGS) -o interesting-party ./interestingparty/src/main.c
+	$(CC) $(CFLAGS) -o encrypt ./cryptography/src/main.c
 
 clean :
 	rm -f kiwi-juice
 	rm -f interesting-party
+	rm -f encrypt
 
 install : $(TARGET)
 	mkdir -p $(prefix)
 	mv kiwi-juice $(prefix)
 	mv interesting-party $(prefix)
+	mv encrypt $(prefix)
