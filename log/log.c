@@ -33,6 +33,6 @@ void print_log(
 
     if (level >= DEFAULT_LOG_LEVEL) {
         clock_gettime(CLOCK_MONOTONIC, &ts);
-        printf("[TOPCODER %7s] %6lu.%lu %s:%s(%d) %s\n", log_level_table[level], ts.tv_sec, ts.tv_nsec, file, func, line, buffer);
+        printf("%6lu.%lu [TOPCODER %7s] %s:%s(%d) %s\n", ts.tv_sec, ts.tv_nsec, log_level_table[level],  file, func, line, buffer);
     }
 }

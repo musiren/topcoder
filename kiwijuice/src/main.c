@@ -46,7 +46,6 @@ int main(int argc, char *argv[])
         printf ("[%d] capa(%d), bottle:(%d)\n", i, capacities[i], bottles[i]);
     }
 
-
     free(capacities);
     free(bottles);
 
