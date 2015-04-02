@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
     if (argc != 2) {
         log_error("Usage: interesing-digits [BASE]");
         return -1;
-    } else if (
-
+    } else if (0) {
+	}
     return 0;
 }

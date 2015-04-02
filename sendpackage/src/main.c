@@ -95,7 +95,7 @@ int move_to_storage(int i, int j, char direction, int *count) {
 
 int main(int argc, char *argv[])
 {
-	int i, j, count = 0;
+	int i, count = 0;
 	int terminal;
 	AnswerN = -1;
 	for (i = 0; i < L; i++) {
