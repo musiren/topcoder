@@ -13,13 +13,13 @@ int main(int argc, char *argv[])
     int *bottles;
     int *fromId;
     int *toId;
-    
+
     if (argc == 2)
         size = atoi(argv[1]);
     else
         return -1;
-    
-    if (size < 2 || size > 50) 
+
+    if (size < 2 || size > 50)
         return -1;
     else {
         capacities = (int *)malloc(size*sizeof(int));
