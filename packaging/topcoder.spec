@@ -1,7 +1,7 @@
 Name:       topcoder
 Summary:    Topcoder study
 Version:    0.1
-Release:    1
+Release:    2
 Group:      Application
 License:    GPLv2
 
